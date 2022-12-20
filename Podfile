@@ -5,6 +5,6 @@ target 'MyFrameworks' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for MyFrameworks
+  pod 'MyPod', :path => 'MyPod/'
 
 end

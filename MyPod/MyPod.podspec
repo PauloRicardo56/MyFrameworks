@@ -6,6 +6,11 @@
 #  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
 #
 
+module Flags
+  DEBUG_URL_AS_CURL = false
+end
+
+
 Pod::Spec.new do |spec|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -64,7 +69,7 @@ askdjaksdjaksdj
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # spec.platform     = :ios
+   spec.platform     = :ios
   # spec.platform     = :ios, "5.0"
 
   #  When using multiple platforms
@@ -91,8 +96,8 @@ askdjaksdjaksdj
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+  spec.source_files  = "MyPod/**/*.{h,m,swift}"
+  # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
@@ -130,9 +135,11 @@ askdjaksdjaksdj
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # spec.requires_arc = true
+#   spec.requires_arc = true
 
-  # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # spec.dependency "JSONKit", "~> 1.4"
+  spec.xcconfig = { "OTHER_SWIFT_FLAGS" => (Flags::DEBUG_URL_AS_CURL ? "-DDEBUG_URL_AS_CURL" : '') }
+#  spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+#  spec.dependency "JSONKit", "~> 1.4"
+#  spec.pod_target_xcconfig = { "OTHER_SWIFT_FLAGS" => "-DDEBUG_URL_AS_CURL" }
 
 end
