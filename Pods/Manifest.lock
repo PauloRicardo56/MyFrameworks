@@ -1,16 +1,21 @@
 PODS:
+  - MarvelAPI (0.0.1)
   - MyPod (0.0.1)
 
 DEPENDENCIES:
+  - MarvelAPI (from `MarvelAPI/`)
   - MyPod (from `MyPod/`)
 
 EXTERNAL SOURCES:
+  MarvelAPI:
+    :path: MarvelAPI/
   MyPod:
     :path: MyPod/
 
 SPEC CHECKSUMS:
+  MarvelAPI: 1357b4b89b024ef742dd7ae75b0f6542ed955fae
   MyPod: 6dd0e14e25ab33444905dde3fc86ef6fd0fa4109
 
-PODFILE CHECKSUM: e9756bcf2d11144e28b4b51f4256230260a8ac81
+PODFILE CHECKSUM: b6054fe7d0af16a591619870476ec55e8e7c71d3
 
 COCOAPODS: 1.11.3

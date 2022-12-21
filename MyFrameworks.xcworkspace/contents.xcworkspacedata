@@ -5,6 +5,9 @@
       location = "group:MyFrameworks.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:MarvelAPI/MarvelAPI.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:MyPod/MyPod.xcodeproj">
    </FileRef>
    <FileRef

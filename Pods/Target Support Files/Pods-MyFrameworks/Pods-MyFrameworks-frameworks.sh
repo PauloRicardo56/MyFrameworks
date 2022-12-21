@@ -176,9 +176,11 @@ code_sign_if_enabled() {
 }
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/MarvelAPI/MarvelAPI.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MyPod/MyPod.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/MarvelAPI/MarvelAPI.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MyPod/MyPod.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

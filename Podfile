@@ -6,5 +6,6 @@ target 'MyFrameworks' do
   use_frameworks!
 
   pod 'MyPod', :path => 'MyPod/'
+  pod 'MarvelAPI', :path => 'MarvelAPI/'
 
 end

@@ -1,0 +1,6 @@
+framework module MarvelAPI {
+  umbrella header "MarvelAPI-umbrella.h"
+
+  export *
+  module * { export * }
+}
