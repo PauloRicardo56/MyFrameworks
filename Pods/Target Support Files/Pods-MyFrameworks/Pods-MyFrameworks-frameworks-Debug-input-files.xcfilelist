@@ -1,3 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-MyFrameworks/Pods-MyFrameworks-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Localization/Localization.framework
 ${BUILT_PRODUCTS_DIR}/MarvelAPI/MarvelAPI.framework
 ${BUILT_PRODUCTS_DIR}/MyPod/MyPod.framework

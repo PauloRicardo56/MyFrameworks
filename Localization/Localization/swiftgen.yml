@@ -1,0 +1,5 @@
+strings:
+  inputs: pt-BR.lproj
+  outputs:
+    - templateName: structured-swift5
+      output: Strings.generated.swift

@@ -7,5 +7,6 @@ target 'MyFrameworks' do
 
   pod 'MyPod', :path => 'MyPod/'
   pod 'MarvelAPI', :path => 'MarvelAPI/'
-
+  pod 'Localization', :path => 'Localization/'
+ 
 end

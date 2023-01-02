@@ -9,7 +9,7 @@
     "Paulo Ricardo": "praraujo.vieira@gmail.com"
   },
   "platforms": {
-    "ios": null
+    "ios": "16.0"
   },
   "source": {
     "git": "https://github.com/PauloRicardo56/MyFrameworks.git",

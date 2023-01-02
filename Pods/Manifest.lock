@@ -1,21 +1,33 @@
 PODS:
+  - Localization (0.0.1):
+    - SwiftGen
   - MarvelAPI (0.0.1)
   - MyPod (0.0.1)
+  - SwiftGen (6.6.2)
 
 DEPENDENCIES:
+  - Localization (from `Localization/`)
   - MarvelAPI (from `MarvelAPI/`)
   - MyPod (from `MyPod/`)
 
+SPEC REPOS:
+  trunk:
+    - SwiftGen
+
 EXTERNAL SOURCES:
+  Localization:
+    :path: Localization/
   MarvelAPI:
     :path: MarvelAPI/
   MyPod:
     :path: MyPod/
 
 SPEC CHECKSUMS:
-  MarvelAPI: 1357b4b89b024ef742dd7ae75b0f6542ed955fae
-  MyPod: 6dd0e14e25ab33444905dde3fc86ef6fd0fa4109
+  Localization: 38e7bd399a59d3cffb9ab83f616a62d106032b20
+  MarvelAPI: e9c1883ba7876a8f899a69a720ff9b3510106326
+  MyPod: dac5040932c2a8c6545afb1e6345bf1c1511ad6b
+  SwiftGen: 1366a7f71aeef49954ca5a63ba4bef6b0f24138c
 
-PODFILE CHECKSUM: b6054fe7d0af16a591619870476ec55e8e7c71d3
+PODFILE CHECKSUM: bf13b74b7346b7e5943a4c9fc16a523eea641b7f
 
 COCOAPODS: 1.11.3
